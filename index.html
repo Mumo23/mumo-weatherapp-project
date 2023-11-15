@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>Mumo Weather Application</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <form class="search" id="search-form">
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="search"
+                placeholder="Type a city.."
+                autofocus="on"
+                autocomplete="off"
+                class="form-control shadow-sm"
+                id="search-input"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control btn btn-primary shadow-sm"
+              />
+            </div>
+          </div>
+        </form>
+        <h1 id="current-city">
+          Nairobi
+        </h1>
+        <ul>
+          <li>
+            <span id="current-date"> Sunday </span>
+          </li>
+        </ul>
+        <div class="row">
+          <div class="col-6">
+            <div class="clearfix">
+              <div class="float-left">
+                <span class="figures" id="current-temperature"> 20 </span>
+                <span class="units">°C | <a href="#">°F</a></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li>
+                last updated: Sunday 0900hrs
+              </li>
+              <li>
+                Precipitation: 30%
+              </li>
+              <li>
+                Humidity: 46%
+              </li>
+              <li>
+                Wind: 21 km/h
+              </li>
+            </ul>
+          </div>     
+          </div>
+          <footer>
+        <p>
+          This project was coded by
+          <a href="https://www.linkedin.com/in/miriam-mumo-6a0950b3/" target="_blank">Mumo Mailu</a> and is
+          <a href="" target="_blank"> on GitHub</a> and
+          <a href="#" target="_blank">hosted on Netlify</a>
+        </p>
+      </footer>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js">
+    </script>
+  </body>
+</html>
