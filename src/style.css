@@ -33,11 +33,11 @@ li {
 .weather-app {
   border: 4px solid #dadde1;
   padding: 15px;
-  margin: 40px auto;
+  margin: 60px auto;
   border-radius: 10px;
   max-width: 600px;
   background: white;
-  box-shadow: blueviolet;
+  box-shadow: red;
 }
 
 .weather-icon {
