@@ -1,6 +1,6 @@
 body {
   font-family: arial, sans-serif;
-  background-color: blue;
+  background-color: rgb(247, 243, 255);
 }
 
 h1 {
@@ -36,6 +36,7 @@ li {
   margin: 20px auto;
   border-radius: 10px;
   max-width: 600px;
+  background: white;
 }
 
 .weather-icon {
