@@ -16,7 +16,8 @@ h1 {
   margin: 50px auto;
   max-width: 600px;
   padding: 30px;
-  border-radius: 16px;
+  border-radius: 15px;
+  box-shadow: rgb(195, 179, 226);
 }
 
 .form {
