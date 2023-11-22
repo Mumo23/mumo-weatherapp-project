@@ -47,7 +47,7 @@ h1 {
 }
 
 .current-city {
-  margin: 0;
+  margin: 10px;
   font-size: 30px;
   line-height: 40px;
 }
