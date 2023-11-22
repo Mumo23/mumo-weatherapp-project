@@ -27,6 +27,7 @@ h1 {
   width: 85%;
   font-size: 16px;
   padding: 15px 20px;
+  text-align: center;
 }
 
 .search-input {
@@ -44,7 +45,6 @@ h1 {
   font-size: 16px;
   color: white;
   margin-left: 10px;
-  width: 70%;
 }
 
 .current-city {
