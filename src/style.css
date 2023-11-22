@@ -53,6 +53,9 @@ h1 {
   line-height: 40px;
 }
 
+.app-data {
+  display: flex;
+}
 .container-details {
   display: flex;
 }
