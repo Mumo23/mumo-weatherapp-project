@@ -13,7 +13,7 @@ h1 {
 
 .app {
   background-color: white;
-  margin: 40px auto;
+  margin: 50px auto;
   max-width: 600px;
   padding: 30px;
   border-radius: 16px;
@@ -46,9 +46,34 @@ h1 {
   color: white;
 }
 
+.app-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-details {
+  display: flex;
+}
+
+.app-emoji {
+  font-size: 44px;
+  margin-top: 22px;
+}
+
+.app-temperature {
+  font-size: 88px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.app-unit {
+  margin-top: 16px;
+  font-size: 28px;
+}
 footer {
   border-top: 1px solid #f9f7fe;
   text-align: center;
   padding-top: 20px;
   color: grey;
+  font-size: 16px;
 }
