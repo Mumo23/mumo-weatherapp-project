@@ -53,10 +53,15 @@ h1 {
   line-height: 40px;
 }
 
+main {
+  padding: 30px;
+}
+
 .app-data {
   display: flex;
+  justify-content: space-between;
 }
-.container-details {
+.app-temperature {
   display: flex;
 }
 
