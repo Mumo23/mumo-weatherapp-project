@@ -37,6 +37,8 @@ li {
   border-radius: 10px;
   max-width: 600px;
   background: white;
+  display: flex;
+  justify-content: space-between;
 }
 
 .weather-icon {
