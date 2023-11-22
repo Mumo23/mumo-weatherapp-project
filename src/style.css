@@ -65,18 +65,18 @@ main {
   display: flex;
 }
 
-.app-emoji {
-  font-size: 44px;
+.emoji {
+  font-size: 30px;
   margin-top: 22px;
 }
 
-.app-temperature {
-  font-size: 88px;
+.figures {
+  font-size: 30px;
   margin-left: 10px;
   font-weight: bold;
 }
 
-.app-unit {
+.unit {
   margin-top: 16px;
   font-size: 28px;
 }
