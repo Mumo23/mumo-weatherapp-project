@@ -31,7 +31,6 @@ h1 {
 
 .search-input {
   background-color: white;
-  border: none;
   border-radius: 6px;
   width: 60%;
   font-size: 16px;
@@ -39,11 +38,17 @@ h1 {
 }
 
 .submit-input {
-  background-color: rgb(92, 92, 228);
+  background: rgb(92, 92, 228);
   border-radius: 6px;
   padding: 15px 35px;
   font-size: 16px;
   color: white;
+  margin-left: 10px;
+}
+
+.app-data {
+  display: flex;
+  justify-content: space-between;
 }
 
 .container-details {
