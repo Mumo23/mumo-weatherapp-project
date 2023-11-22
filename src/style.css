@@ -54,17 +54,14 @@ h1 {
 
 .app-emoji {
   font-size: 44px;
-  margin-top: 22px;
 }
 
 .app-temperature {
   font-size: 88px;
-  margin-left: 10px;
   font-weight: bold;
 }
 
 .app-unit {
-  margin-top: 16px;
   font-size: 28px;
 }
 
