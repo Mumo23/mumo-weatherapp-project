@@ -20,11 +20,12 @@ h1 {
 }
 
 .form {
-  width: 500px;
-  padding: 10px 20px;
-  box-shadow: white;
-  text-align: center;
-  margin-left: 27px;
+  background-color: #f9f7fe;
+  border: none;
+  border-radius: 6px;
+  width: 80%;
+  font-size: 16px;
+  padding: 15px 20px;
 }
 
 .search-input {
