@@ -80,6 +80,22 @@ main {
   font-size: 20px;
 }
 
+.weather-forecast {
+  margin: 15px;
+  text-align: center;
+}
+
+.forecast-day {
+  font-size: 16px;
+}
+
+.forecast-temperature {
+  font-size: 13px;
+}
+
+.forecast-temperature-max {
+  color: blueviolet;
+}
 footer {
   border-top: 1px solid #f9f7fe;
   text-align: center;
