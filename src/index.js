@@ -51,14 +51,19 @@ let currentDate = new Date();
 
 currentDateELement.innerHTML = formatDate(currentDate);
 
+function displayForecast {
+  let forecast = document.querySelector("#forecast");
 
-let forecast = document.querySelector("#forecast");
+  let days = ["Tue", "Wed", "Thur", "Fri", "Sat", "Sun"];
+  let forecastHtml = "";
 
-forecast.innerHTML = '
-<div class="row">
+  days.forEach(function(day) {
+    forecastHtml = forecastHtml +
+    '
+    <div class="row">
         <div class="col-2">
           <div class="forecast-day">
-            Thur
+            ${day}
           </div>
     <img src="https://img.freepik.com/premium-vector/sun-with-cloud-illustration_637394-1545.jpg?w=740" alt="" width="30px"/>
     <div class="forecast-temperature">
@@ -71,4 +76,11 @@ forecast.innerHTML = '
     </div>
     </div>
     ';
+  });
+
+  forecastElement.innerHTML = forecastHtml;
+}
+
+displayForecast();
+
 
