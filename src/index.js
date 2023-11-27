@@ -59,7 +59,7 @@ function displayForecast {
 
   days.forEach(function(day) {
     forecastHtml = forecastHtml +
-    '
+    "
     <div class="row">
         <div class="col-2">
           <div class="forecast-day">
@@ -75,7 +75,7 @@ function displayForecast {
       </span> 
     </div>
     </div>
-    ';
+    ;
   });
 
   forecastElement.innerHTML = forecastHtml;
