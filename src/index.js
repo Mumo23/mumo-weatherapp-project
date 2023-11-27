@@ -50,3 +50,25 @@ let currentDateELement = document.querySelector("#current-date");
 let currentDate = new Date();
 
 currentDateELement.innerHTML = formatDate(currentDate);
+
+
+let forecast = document.querySelector("#forecast");
+
+forecast.innerHTML = '
+<div class="row">
+        <div class="col-2">
+          <div class="forecast-day">
+            Thur
+          </div>
+    <img src="https://img.freepik.com/premium-vector/sun-with-cloud-illustration_637394-1545.jpg?w=740" alt="" width="30px"/>
+    <div class="forecast-temperature">
+      <span class="forecast-temperature-max">
+        18°
+      </span>
+      <span class="forecast-temperature-min">
+        12°
+      </span> 
+    </div>
+    </div>
+    ';
+
