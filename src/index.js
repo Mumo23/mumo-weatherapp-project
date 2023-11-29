@@ -2,6 +2,9 @@ function displayTemperature(response) {
   let temperatureElement = document.querySelector("#current-temperature");
   let temperature = Math.round(response.data.temperature.current);
   temperatureElement.innerHTML = temperature;
+
+  getForecast(response.data.city);
+  console.log(Nairobi);
 }
 
 function search(event) {
@@ -85,9 +88,6 @@ function displayForecast(response) {
 
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = forecastHtml;
-
-  getForecast(response.data.city);
-  console.log(Nairobi);
 }
 
 displayForecast();
