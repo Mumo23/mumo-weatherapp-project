@@ -6,12 +6,10 @@ function newWeather(response) {
   let windSpeedElement = document.querySelector("#wind-speed");
   let cityElement = document.querySelector("#city");
   let searchInputElement = document.querySelector("#search-input");
-  let emojiElement = document.querySelector("#emoji");
 
   let city = searchInputElement.value;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
-  emojiElement.innerHTML = `<img src="${response.data.condition.emoji_url}"class="emoji" />`;
   axios.get(apiUrl).then(newWeather);
   cityElement.innerHTML = city;
 
@@ -59,7 +57,7 @@ function searchCity(city) {
   axios.get(apiUrl).then(newWeather);
 }
 
-function handleSearchSubmit(event) {
+function searchSubmit(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#search-input");
 
@@ -102,4 +100,4 @@ function displayForecast(response) {
   forecastElement.innerHTML = forecastHtml;
 }
 
-displayForecast();
+searchCity();
