@@ -6,7 +6,7 @@ function displayTemperature(response) {
 
 function search(event) {
   event.preventDefault();
-  let cityElement = document.querySelector("#current-city");
+  let cityElement = document.querySelector("#city");
   let searchInputElement = document.querySelector("#search-input");
   let city = searchInputElement.value;
   let apiKey = "t12ab478ea9e3e17dd09edoc3cbff520";
