@@ -1,20 +1,28 @@
-function displayTemperature(response) {
+function newWeather(response) {
   let temperatureElement = document.querySelector("#current-temperature");
   let temperature = Math.round(response.data.temperature.current);
   temperatureElement.innerHTML = temperature;
+  let cityElement = document.querySelector("#current-city");
+  let humidityElement = document.querySelector("#humidity");
+  let windElement = document.querySelector("#wind");
+  let emojiElement = document.querySelector("#emoji");
+
+  cityElement.innerHTML = response.data.city;
+  humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
+  windElement.innerHTML = `${response.data.wind.speed}km/h`;
+  temperatureElement.innerHTML = Math.round(temperature);
+  emojiElement.innerHTML = `<img src="${response.data.condition.emoji_url}" class="emoji" />`;
 
   getForecast(response.data.city);
-  console.log(Nairobi);
 }
 
 function search(event) {
   event.preventDefault();
-  let cityElement = document.querySelector("#current-city");
   let searchInputElement = document.querySelector("#search-input");
   let city = searchInputElement.value;
   let apiKey = "t12ab478ea9e3e17dd09edoc3cbff520";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(displayTemperature);
+  axios.get(apiUrl).then(newWeather);
 
   cityElement.innerHTML = city;
 }
