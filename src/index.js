@@ -1,11 +1,13 @@
 function newWeather(response) {
   let temperatureElement = document.querySelector("#current-temperature");
+  let currentDateELement = document.querySelector("#current-date");
   let cityElement = document.querySelector("#city");
   let humidityElement = document.querySelector("#humidity");
   let windspeedElement = document.querySelector("#wind-speed");
   let emojiElement = document.querySelector("#emoji");
 
   cityElement.innerHTML = response.data.city;
+  currentDateELement.innerHTML = formatDate(currentDate);
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windspeedElement.innerHTML = `${response.data.wind.speed}km/h`;
   temperatureElement.innerHTML = Math.round(temperature);
@@ -26,22 +28,10 @@ function search(event) {
   searchCity = searchInputElement.value;
 }
 
-let searchFormElement = document.querySelector("#search-form");
-searchFormElement.addEventListener("submit", search);
-
 function formatDate(date) {
   let minutes = date.getMinutes();
   let hours = date.getHours();
   let day = date.getDay();
-
-  if (minutes < 10) {
-    minutes = `0${minutes}`;
-  }
-
-  if (hours < 10) {
-    hours = `0${hours}`;
-  }
-
   let days = [
     "Sunday",
     "Monday",
@@ -52,14 +42,19 @@ function formatDate(date) {
     "Saturday",
   ];
 
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+
   let formattedDay = days[day];
   return `${formattedDay} ${hours}:${minutes}`;
 }
 
-let currentDateELement = document.querySelector("#current-date");
 let currentDate = new Date();
-
-currentDateELement.innerHTML = formatDate(currentDate);
 
 function getForecast(city) {
   let apiKey = "t12ab478ea9e3e17dd09edoc3cbff520";
@@ -97,4 +92,6 @@ function displayForecast(response) {
   forecastElement.innerHTML = forecastHtml;
 }
 
+let searchFormElement = document.querySelector("#search-form");
+searchFormElement.addEventListener("submit", search);
 searchCity();
