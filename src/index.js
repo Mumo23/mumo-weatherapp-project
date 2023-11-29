@@ -51,7 +51,13 @@ let currentDate = new Date();
 
 currentDateELement.innerHTML = formatDate(currentDate);
 
-function displayForecast() {
+function getForecast(city) {
+  let apiKey = "t12ab478ea9e3e17dd09edoc3cbff520";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {
   let days = ["Tue", "Wed", "Thur", "Fri", "Sat", "Sun"];
   let forecastHtml = "";
 
@@ -82,3 +88,4 @@ function displayForecast() {
 }
 
 displayForecast();
+getForecast();
