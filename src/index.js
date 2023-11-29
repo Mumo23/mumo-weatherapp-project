@@ -1,7 +1,7 @@
 function newWeather(response) {
   let temperatureElement = document.querySelector("#current-temperature");
   let temperature = Math.round(response.data.temperature.current);
-  let cityElement = document.querySelector("#current-city");
+  let cityElement = document.querySelector("#city");
   let humidityElement = document.querySelector("#humidity");
   let windspeedElement = document.querySelector("#windSpeed");
   let emojiElement = document.querySelector("#emoji");
