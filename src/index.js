@@ -1,9 +1,8 @@
 function newWeather(response) {
   let temperatureElement = document.querySelector("#current-temperature");
-  let temperature = Math.round(response.data.temperature.current);
   let cityElement = document.querySelector("#city");
   let humidityElement = document.querySelector("#humidity");
-  let windspeedElement = document.querySelector("#windSpeed");
+  let windspeedElement = document.querySelector("#wind-speed");
   let emojiElement = document.querySelector("#emoji");
 
   cityElement.innerHTML = response.data.city;
@@ -26,6 +25,9 @@ function search(event) {
   let searchInputElement = document.querySelector("#search-input");
   searchCity = searchInputElement.value;
 }
+
+let searchFormElement = document.querySelector("#search-form");
+searchFormElement.addEventListener("submit", search);
 
 function formatDate(date) {
   let minutes = date.getMinutes();
@@ -95,4 +97,4 @@ function displayForecast(response) {
   forecastElement.innerHTML = forecastHtml;
 }
 
-displayForecast();
+searchCity();
