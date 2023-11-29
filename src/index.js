@@ -57,7 +57,7 @@ function searchCity(city) {
   axios.get(apiUrl).then(newWeather);
 }
 
-function searchSubmit(event) {
+function handleSearchSubmit(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#search-input");
 
@@ -101,3 +101,4 @@ function displayForecast(response) {
 }
 
 searchCity();
+displayForecast();
