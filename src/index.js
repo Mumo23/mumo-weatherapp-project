@@ -87,6 +87,7 @@ function displayForecast(response) {
   forecastElement.innerHTML = forecastHtml;
 
   getForecast(response.data.city);
+  console.log(Nairobi);
 }
 
 displayForecast();
