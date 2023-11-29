@@ -95,6 +95,7 @@ main {
 .forecast-temperature {
   font-size: 13px;
   margin-top: 10px;
+  display: inline;
 }
 
 .forecast-temperature-max {
