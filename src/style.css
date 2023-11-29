@@ -83,7 +83,7 @@ main {
 .weather-forecast {
   margin: 15px;
   text-align: center;
-  display: inline;
+  display: flex;
 }
 
 .forecast-day {
