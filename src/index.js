@@ -11,9 +11,10 @@ function newWeather(response) {
   let city = searchInputElement.value;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
-  emojiElement.innerHTML = `<img src="${response.data.condition.emoji_url}" class="emoji" />`;
+  emojiElement.innerHTML = `<img src="${response.data.condition.emoji_url}"class="emoji" />`;
   axios.get(apiUrl).then(newWeather);
   cityElement.innerHTML = city;
+
   getForecast(response.data.city);
 }
 
