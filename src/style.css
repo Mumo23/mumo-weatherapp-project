@@ -40,10 +40,12 @@ h1 {
 }
 
 .submit-input {
+  background: #885df1;
   border-radius: 6px;
   padding: 15px;
   font-size: 16px;
   margin-left: 15px;
+  color: white;
 }
 
 .city {
