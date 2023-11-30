@@ -40,13 +40,10 @@ h1 {
 }
 
 .submit-input {
-  background: #885df1;
-  border: none;
   border-radius: 6px;
-  padding: 15px 30px;
+  padding: 15px;
   font-size: 16px;
-  margin-left: 5px;
-  color: white;
+  margin-left: 15px;
 }
 
 .city {
@@ -77,7 +74,7 @@ main {
 }
 
 .current-temperature {
-  font-size: 70px;
+  font-size: 50px;
   margin-left: 10px;
   font-weight: bold;
   margin-top: 40px;
