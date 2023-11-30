@@ -94,8 +94,8 @@ main {
 }
 
 .forecast-icon {
-  width: 50px;
-  text-align: center;
+  width: 40px;
+  display: inline;
 }
 
 .forecast-temperature {
