@@ -9,7 +9,6 @@ function newWeather(response) {
   cityElement.innerHTML = response.data.city;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
-  axios.get(apiUrl).then(newWeather);
 
   getForecast(response.data.city);
 }
@@ -98,4 +97,4 @@ function displayForecast(response) {
   forecastElement.innerHTML = forecastHtml;
 }
 
-searchCity();
+searchCity(Nairobi);
