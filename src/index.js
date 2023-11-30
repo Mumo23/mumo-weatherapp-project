@@ -5,10 +5,12 @@ function newWeather(response) {
   let humidityElement = document.querySelector("#humidity");
   let windSpeedElement = document.querySelector("#wind-speed");
   let cityElement = document.querySelector("#city");
+  let iconElement = document.querySelector("#icon");
 
   cityElement.innerHTML = response.data.city;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" />`;
 
   getForecast(response.data.city);
 }
