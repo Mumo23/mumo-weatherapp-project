@@ -40,9 +40,10 @@ h1 {
 }
 
 .search-form {
-  background-color: rgb(217, 195, 236);
+  background-color: #885df1;
   color: white;
   border-radius: 6px;
+  border: none;
 }
 .city {
   margin-top: 10px;
