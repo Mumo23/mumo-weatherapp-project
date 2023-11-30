@@ -92,6 +92,10 @@ main {
   margin-bottom: 10px;
 }
 
+.forecast-icon {
+  width: 100%;
+}
+
 .forecast-temperature {
   font-size: 13px;
   margin-top: 10px;
