@@ -79,13 +79,13 @@ function displayForecast(response) {
           <div class="forecast-day">
             Tue
           </div>
-    <img src="https://img.freepik.com/premium-vector/sun-with-cloud-illustration_637394-1545.jpg?w=740" alt="" width="30px"/>
+    <img src="${day.condition.icon_url}" />
     <div class="forecast-temperature">
       <span class="forecast-temperature-max">
         ${Math.round(day.temperature.maximum)}°
       </span>
       <span class="forecast-temperature-min">
-        12°
+        ${Math.round(day.temperature.minimum)}°
       </span> 
     </div>
     </div>
