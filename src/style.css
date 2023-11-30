@@ -64,7 +64,7 @@ main {
   display: flex;
 }
 
-.icon {
+.emoji {
   font-size: 40px;
   margin-top: 9px;
 }
@@ -73,7 +73,6 @@ main {
   font-size: 50px;
   margin-left: 10px;
   font-weight: bold;
-  margin-top: 20px;
 }
 
 .unit {
@@ -95,8 +94,7 @@ main {
 }
 
 .forecast-icon {
-  width: 100px;
-  display: inline;
+  width: 40px;
 }
 
 .forecast-temperature {
