@@ -68,6 +68,7 @@ function getForecast(city) {
 }
 
 function displayForecast(response) {
+  console.log(response.data);
   let forecastHtml = "";
 
   response.data.daily.forEach(function (day) {
@@ -96,4 +97,4 @@ function displayForecast(response) {
   forecastElement.innerHTML = forecastHtml;
 }
 
-searchCity(Nairobi);
+searchCity(Paris);
