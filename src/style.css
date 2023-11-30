@@ -39,7 +39,7 @@ h1 {
   padding: 15px;
 }
 
-.submit-input {
+.search-form {
   border-radius: 6px;
   padding: 15px;
   font-size: 16px;
@@ -66,7 +66,7 @@ main {
 }
 
 .icon {
-  font-size: 60px;
+  font-size: 40px;
   margin-top: 35px;
   margin-left: 30px;
   height: 88px;
@@ -74,7 +74,7 @@ main {
 }
 
 .current-temperature {
-  font-size: 50px;
+  font-size: 70px;
   margin-left: 10px;
   font-weight: bold;
   margin-top: 40px;
