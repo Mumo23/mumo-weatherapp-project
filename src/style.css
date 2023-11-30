@@ -73,10 +73,11 @@ main {
   font-size: 50px;
   margin-left: 10px;
   font-weight: bold;
+  margin-top: 20px;
 }
 
 .unit {
-  margin-top: 50px;
+  margin-top: 16px;
   font-size: 20px;
 }
 
