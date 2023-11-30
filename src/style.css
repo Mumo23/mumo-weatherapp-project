@@ -95,6 +95,7 @@ main {
 
 .forecast-icon {
   width: 50px;
+  margin-right: 12px;
 }
 
 .forecast-temperature {
