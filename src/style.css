@@ -68,6 +68,7 @@ main {
 .icon {
   font-size: 40px;
   margin-top: 40px;
+  margin-left: 12px;
 }
 
 .current-temperature {
