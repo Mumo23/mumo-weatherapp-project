@@ -41,10 +41,11 @@ h1 {
 
 .submit-input {
   background: #885df1;
+  border: none;
   border-radius: 6px;
-  padding: 15px;
+  padding: 15px 30px;
   font-size: 16px;
-  margin-left: 15px;
+  margin-left: 5px;
   color: white;
 }
 
