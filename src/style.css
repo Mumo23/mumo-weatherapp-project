@@ -44,7 +44,9 @@ h1 {
   color: white;
   border-radius: 6px;
   border: none;
+  padding: 3px 5px;
 }
+
 .city {
   margin-top: 10px;
   font-size: 30px;
