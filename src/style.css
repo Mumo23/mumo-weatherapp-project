@@ -108,6 +108,7 @@ main {
 
 .forecast-temperature-max {
   color: black;
+  font-weight: bold;
 }
 
 footer {
