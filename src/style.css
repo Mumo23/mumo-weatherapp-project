@@ -88,7 +88,6 @@ main {
 }
 
 .weather-forecast {
-  margin: 15px;
   text-align: center;
   display: flex;
   justify-content: space-around;
