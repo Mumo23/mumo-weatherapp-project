@@ -107,8 +107,9 @@ main {
   text-align: center;
 }
 
-.forecast-temperature-max {
+.forecast-temperature-max .forecast-temperature-min {
   color: black;
+  text-align: center;
 }
 
 footer {
