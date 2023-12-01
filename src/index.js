@@ -78,18 +78,18 @@ function newDay(timestamp) {
 
 function displayForecast(response) {
   console.log(response.data);
-  let forecastHtml = "";
+  let forecastHtml = '<div class="row">';
 
   response.data.daily.forEach(function (day, index) {
-    if (index < 5) {
+    if (index > 0 && index < 6) {
       forecastHtml =
         forecastHtml +
-        `<div class="row">
-        <div class="col-2">
+        `
+        <div class="col">
           <div class="forecast-day">
             ${newDay(day.time)}
           </div>
-    <img src="${day.condition.icon_url}" class="forecast-icon" />
+    <img src="${day.condition.icon_url}" class="forecast-icon" width="70" />
     <div class="forecast-temperature">
       <span class="forecast-temperature-max">
         ${Math.round(day.temperature.maximum)}°
@@ -99,13 +99,13 @@ function displayForecast(response) {
       </span> 
     </div>
     </div>
-    </div>
     `;
     }
   });
 
+  forecastHtml = forecastHtml + "</div>";
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = forecastHtml;
 }
 
-searchCity(Paris);
+searchCity("Nairobi");
