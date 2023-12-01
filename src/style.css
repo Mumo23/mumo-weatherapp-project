@@ -102,7 +102,6 @@ main {
 
 .forecast-temperature {
   font-size: 13px;
-  margin-top: 10px;
   display: flex;
   text-align: center;
 }
